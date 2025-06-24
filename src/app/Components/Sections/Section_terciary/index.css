@@ -1,0 +1,40 @@
+#section_terciary {
+    background-color: var(--secondary_color_section);
+
+    .section_terciary_content {
+        width: 100%;
+        height: 100%;
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+
+            .swiper-slide {
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+
+                h1 {
+                    font-family: var(--font-nunito-regular);
+                }
+            }
+        }
+    }
+
+    #content_comments_empty {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+
+        #section_terciary_icon {
+            max-width: 48px;
+            max-height: 48px;
+
+            .image {
+                max-width: 100%;
+                max-height: 100%;
+            }
+        }
+    }
+}

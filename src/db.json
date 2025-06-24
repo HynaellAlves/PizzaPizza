@@ -1,0 +1,78 @@
+{
+  "pizzas": [
+    {
+      "id": "1",
+      "name": "Pepperoni",
+      "description": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+      "price": 39.9,
+      "path_image": "/Pepperoni.png",
+      "quantity": 1
+    },
+    {
+      "id": "2",
+      "name": "Muita Maionese",
+      "description": "Amet 2 minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+      "price": 39.9,
+      "path_image": "/Maionese.png",
+      "quantity": 1
+    },
+    {
+      "id": "3",
+      "name": "Queijo",
+      "description": "Amet 3 minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+      "price": 50.99,
+      "path_image": "/Queijo.png",
+      "quantity": 1
+    },
+    {
+      "id": "4",
+      "name": "Vários Ingredientes",
+      "description": "Amet 4 minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+      "price": 25.99,
+      "path_image": "/Varios.png",
+      "quantity": 1
+    },
+    {
+      "id": "5",
+      "name": "Romeu e Julieta",
+      "description": "Amet 5 minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+      "price": 90.99,
+      "path_image": "/Varios.png",
+      "quantity": 1
+    },
+    {
+      "id": "6",
+      "name": "Manjericão",
+      "description": "Amet 6 minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+      "price": 60.99,
+      "path_image": "/Varios.png",
+      "quantity": 1
+    },
+    {
+      "id": "7",
+      "name": "La puterrie",
+      "description": "Amet 7 minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+      "price": 50.99,
+      "path_image": "/Varios.png",
+      "quantity": 1
+    }
+  ],
+  "shop_cart": [],
+  "comments": [
+    {
+      "id": "1",
+      "title": "Melhor margherita do mundo",
+      "name": "Alguém Importante"
+    },
+    {
+      "id": "2",
+      "title": "Essa pizza é colossal",
+      "name": "Outro Alguém Importante"
+    },
+    {
+      "id": "3",
+      "title": "Abriu meus horizontes de sabor",
+      "name": "Mais um Alguém Importante"
+    }
+  ]
+}

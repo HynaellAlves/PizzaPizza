@@ -1,0 +1,13 @@
+#container_list {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 746px;
+    max-width: 746px;
+    padding: 30px;
+    border-radius: 10px;
+    background: var(--background);
+    box-shadow: 0 0 20px #0000002d;
+    gap: 20px 0;
+}

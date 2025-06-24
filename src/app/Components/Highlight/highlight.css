@@ -1,0 +1,15 @@
+.highlight {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 315px;
+    max-width: 392px;
+    max-height: 237px;
+    gap: 20px;
+
+    .highlight_vector {
+        max-width: 96px;
+        max-height: 96px;
+    }
+}

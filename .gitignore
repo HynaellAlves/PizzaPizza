@@ -1,0 +1,5 @@
+.slicemachine/
+node_modules/
+.env
+.next/
+dist/

@@ -1,0 +1,79 @@
+{
+  "id": "highlights",
+  "type": "SharedSlice",
+  "name": "SectionSliceZone",
+  "description": "Highlights",
+  "variations": [
+    {
+      "id": "highlights",
+      "name": "Highlights_image",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "highlight_image": {
+          "type": "Group",
+          "config": {
+            "label": "Destaque com imagem",
+            "repeat": true,
+            "fields": {
+              "image_highlight": {
+                "type": "Image",
+                "config": {
+                  "label": "Imagem de ícone do Destaque",
+                  "constraint": {},
+                  "thumbnails": []
+                }
+              },
+              "title_highlight": {
+                "type": "Text",
+                "config": {
+                  "label": "Título do Destaque",
+                  "placeholder": "Digite o título do destaque"
+                }
+              },
+              "description_highlight": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Descrição do Destaque",
+                  "placeholder": "Digite a descrição do destaque",
+                  "allowTargetBlank": true,
+                  "single": "strong,em,hyperlink"
+                }
+              }
+            }
+          }
+        }
+      },
+      "items": {}
+    },
+    {
+      "id": "highlightsText",
+      "name": "Highlights_text",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "highlight_text": {
+          "type": "Group",
+          "config": {
+            "label": "Destaque de texto (sem imagem)",
+            "repeat": true,
+            "fields": {
+              "highlight_description": {
+                "type": "Text",
+                "config": {
+                  "label": "Descrição do Destaque",
+                  "placeholder": "Digite o texto de destaque"
+                }
+              }
+            }
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}
