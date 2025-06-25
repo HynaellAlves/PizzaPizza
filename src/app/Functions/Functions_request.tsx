@@ -1,38 +1,36 @@
 // Importando propriedade do objeto
-import { comment } from "../types/Comments_propierts";
 import { pizza } from "../types/Pizza_propierts";
-
-// Urls das reqisições
-const Base_url_shop_cart = 'http://localhost:3001/shop_cart';
-const Base_url_menu = 'http://localhost:3001/pizzas';
-const Base_url_comments = 'http://localhost:3001/comments';
 
 export async function getAllMenu() {
 
+    const url = `${process.env.NEXT_PUBLIC_Base_url}pizzas`;
+
     try {
 
-        const Get = await fetch(Base_url_menu, {
+        const Get = await fetch(url, {
             method: 'GET',
         });
 
         const data_json = await Get.json();
 
-        if (!data_json) throw 'Erro de requisição';
-        if (data_json.length === 0) throw 'A lista está vazia';
-        if (data_json === null) throw 'A lista é nula';
+        if (!data_json || data_json === null || data_json === undefined) throw 'Erro de requisição, a resposta está vazia';
+        if (data_json.length === 0) throw 'A lista do cardápio está vazia';
 
         return data_json
     }
     catch (err) {
+
         console.log(`Erro de execução ${err}`);
     }
 }
 
 export async function getAllCart() {
 
+    const url = `${process.env.NEXT_PUBLIC_Base_url}shop_cart`;
+
     try {
 
-        const Get = await fetch(Base_url_shop_cart, {
+        const Get = await fetch(url, {
             method: 'GET',
         });
 
@@ -47,46 +45,48 @@ export async function getAllCart() {
     }
 }
 
-export async function getComments() {
+// export async function getComments() {
 
-    try {
+//     try {
 
-        const Get = await fetch(Base_url_comments, {
-            method: 'GET',
-        });
+//         const Get = await fetch(Base_url_comments, {
+//             method: 'GET',
+//         });
 
-       const data_json = await Get.json();
+//         const data_json = await Get.json();
 
-        return data_json
-    }
-    catch (err) {
-        console.log(`Erro de execução ${err}`);
-    }
-}
+//         return data_json
+//     }
+//     catch (err) {
+//         console.log(`Erro de execução ${err}`);
+//     }
+// }
 
 export async function add_cart(pizza: pizza) {
+
+    const url = `${process.env.NEXT_PUBLIC_Base_url}shop_cart`;
 
     if (pizza.quantity > 0 && pizza.quantity && pizza.quantity !== undefined || null) {
 
         try {
-            const Get = await fetch(`${Base_url_shop_cart}/${pizza.id}`, {
+            const Get = await fetch(`${url}/${pizza.id}`, {
                 method: 'GET'
             });
 
             if (Get.status == 404) {
 
-                const Post = await fetch(Base_url_shop_cart, {
+                const Post = await fetch(url, {
                     method: 'POST',
                     body: JSON.stringify(pizza)
                 });
 
-                alert('Item adicionado ao carrinho');
+                return true
             }
+            return false
         }
 
         catch (err) {
-
-            console.log(err);
+            
         }
 
     } else {
@@ -96,8 +96,10 @@ export async function add_cart(pizza: pizza) {
 
 export async function alter_cart(pizza: pizza) {
 
+    const url = `${process.env.NEXT_PUBLIC_Base_url}shop_cart`;
+
     try {
-        const Post = await fetch(`${Base_url_shop_cart}/${pizza.id}`, {
+        const Post = await fetch(`${url}/${pizza.id}`, {
             method: 'PATCH',
             body: JSON.stringify(pizza)
         });
@@ -107,11 +109,14 @@ export async function alter_cart(pizza: pizza) {
 }
 
 async function allClearNull(pizzas: pizza[]) {
+
+    const url = `${process.env.NEXT_PUBLIC_Base_url}shop_cart`;
+
     try {
         pizzas.map(async (item: pizza) => {
 
             if (item.quantity == 0) {
-                const Del = await fetch(`${Base_url_shop_cart}/${item.id}`, {
+                const Del = await fetch(`${url}/${item.id}`, {
                     method: 'DELETE'
                 });
             }
@@ -125,12 +130,14 @@ async function allClearNull(pizzas: pizza[]) {
 
 export async function allClear(data: any) {
 
+    const url = `${process.env.NEXT_PUBLIC_Base_url}shop_cart`;
+
     if (data !== undefined && data !== null && data.length !== 0) {
 
         try {
             data.map(async (item: pizza) => {
 
-                const Del = await fetch(`${Base_url_shop_cart}/${item.id}`, {
+                const Del = await fetch(`${url}/${item.id}`, {
                     method: 'DELETE'
                 });
             });

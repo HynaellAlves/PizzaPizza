@@ -7,6 +7,10 @@ import SectionMenu from "./Components/Sections/Section_menu";
 import Header from "./Components/Header";
 import Modal from "./Components/Modal";
 
+import { ToastContainer } from 'react-toastify';
+
+import 'react-toastify/dist/ReactToastify.css';
+
 import { createClient } from "@/prismicio";
 
 export default async function Index() {
@@ -26,6 +30,7 @@ export default async function Index() {
         <>
         </>
       </Modal>
+      <ToastContainer />
     </div>
   );
 }

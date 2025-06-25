@@ -4,7 +4,7 @@
       "id": "1",
       "name": "Pepperoni",
       "description": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
-      "price": 39.9,
+      "price": 900,
       "path_image": "/Pepperoni.png",
       "quantity": 1
     },
@@ -57,7 +57,16 @@
       "quantity": 1
     }
   ],
-  "shop_cart": [],
+  "shop_cart": [
+    {
+      "id": "2",
+      "path_image": "/Maionese.png",
+      "name": "Muita Maionese",
+      "description": "Amet 2 minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+      "price": 39.9,
+      "quantity": 1
+    }
+  ],
   "comments": [
     {
       "id": "1",
