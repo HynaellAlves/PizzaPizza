@@ -4,6 +4,7 @@ import SectionPrimary from "./Components/Sections/Section_primary";
 import SectionSencudary from "./Components/Sections/Section_sencudary";
 import SectionTerciary from "./Components/Sections/Section_terciary";
 import SectionMenu from "./Components/Sections/Section_menu";
+import SectionForm from "./Components/Sections/Section_form";
 import Header from "./Components/Header";
 import Modal from "./Components/Modal";
 
@@ -25,6 +26,7 @@ export default async function Index() {
       <SectionSencudary data={request} />
       <SectionTerciary data={request} />
       <SectionMenu />
+      <SectionForm />
       <Shopping_cart />
       <Modal>
         <>

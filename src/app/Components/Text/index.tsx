@@ -12,7 +12,7 @@ type TextProps = {
 
 export default function Text(props: TextProps) {
     return (
-        <div className="container_text" style={{ fontFamily: props.fontStyle}}>
+        <div id={props.id} className="container_text" style={{ fontFamily: props.fontStyle}}>
             <p style={{ fontSize: props.fontSize, textAlign: props.position, fontWeight: props.fontWeight }}>
                 {props.children}
             </p>
