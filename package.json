@@ -3,36 +3,39 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "concurrently \"npm run next\" \"npm run server\"",
+    "next": "next dev --turbopack",
+    "server": "npx json-server --watch db.json --port 3001",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "slicemachine": "start-slicemachine"
   },
   "dependencies": {
-    "@hookform/resolvers": "^5.1.1",
-    "@prismicio/client": "^7.17.3",
-    "@prismicio/next": "^2.0.1",
-    "@prismicio/react": "^3.2.1",
-    "@sendgrid/mail": "^8.1.5",
-    "dotenv": "^16.5.0",
-    "json-server": "^1.0.0-beta.3",
-    "next": "15.3.3",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "react-hook-form": "^7.59.0",
-    "react-toastify": "^11.0.5",
-    "swiper": "^11.2.8",
-    "yup": "^1.6.1"
+    "@hookform/resolvers": "^5.5.7",
+    "@prismicio/client": "^7.21.8",
+    "@prismicio/next": "^2.3.0",
+    "@prismicio/react": "^3.4.1",
+    "@sendgrid/mail": "^8.1.6",
+    "dotenv": "^17.4.2",
+    "json-server": "^1.0.0-beta.15",
+    "next": "16.2.12",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "react-hook-form": "^7.83.0",
+    "react-toastify": "^11.1.0",
+    "swiper": "^14.0.7",
+    "yup": "^1.7.1"
   },
   "devDependencies": {
-    "@slicemachine/adapter-next": "^0.3.78",
+    "@slicemachine/adapter-next": "^0.3.97",
     "@tailwindcss/postcss": "^4",
-    "@types/node": "^20",
+    "@types/node": "^26",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "slice-machine-ui": "^2.16.1",
+    "concurrently": "^10.0.4",
+    "slice-machine-ui": "^2.21.4",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "typescript": "^5.9.2"
   }
 }

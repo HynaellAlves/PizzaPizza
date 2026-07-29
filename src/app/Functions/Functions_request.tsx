@@ -3,22 +3,29 @@ import { pizza } from "../types/Pizza_propierts";
 
 import { email } from "../types/email_prooierts";
 
+interface propsResponsePizzas {
+status: number,
+pizzas: [],
+}
+
 export async function getAllMenu() {
 
-    const url = `${process.env.NEXT_PUBLIC_Base_url}pizzas`;
+    // Essa linha só é pertinente com o Json-Server
+    const urlJson_Server = `${process.env.NEXT_PUBLIC_Base_url_jsonServer}pizzas`;
+    const url = `${process.env.NEXT_PUBLIC_Base_url}api/pizzas`;
 
     try {
 
-        const Get = await fetch(url, {
+         const request = await fetch(url, {
             method: 'GET',
         });
 
-        const data_json = await Get.json();
+        const data_json: propsResponsePizzas = await request.json();
 
         if (!data_json || data_json === null || data_json === undefined) throw 'Erro de requisição, a resposta está vazia';
-        if (data_json.length === 0) throw 'A lista do cardápio está vazia';
+        if (data_json.pizzas.length === 0) throw 'A lista do cardápio está vazia';
 
-        return data_json
+        return data_json.pizzas
     }
     catch (err) {
 
