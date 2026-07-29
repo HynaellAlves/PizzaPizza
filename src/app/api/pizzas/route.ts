@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import data from "@/db.json";
 
-export async function GET(res: NextResponse) {
+export async function GET() {
   try {
     const pizzaList = data.pizzas;
 
