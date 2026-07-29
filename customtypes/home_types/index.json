@@ -1,0 +1,49 @@
+{
+  "format": "page",
+  "id": "home_types",
+  "label": "Home Types",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "titulo_banner": {
+        "type": "Text",
+        "config": {
+          "label": "Título do Banner Principal",
+          "placeholder": "Digite o título do banner principal"
+        }
+      },
+      "descricao_principal": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Descrição do Banner Principal",
+          "placeholder": "Digite a descrição que será exibida no banner principal",
+          "allowTargetBlank": true,
+          "single": "strong,em,hyperlink"
+        }
+      },
+      "imagem_banner": {
+        "type": "Image",
+        "config": {
+          "label": "Imagem do Banner Principal",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "comments_zone": {
+              "type": "SharedSlice"
+            },
+            "highlights": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    }
+  }
+}

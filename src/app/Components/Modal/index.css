@@ -1,0 +1,12 @@
+#container_modal {
+    display: none;
+    position: fixed;
+    top: 10%;
+    right: 2%;
+    width: 25%;
+    height: 70%;
+    background: #00000070;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    transition: 0.3s;
+}

@@ -1,0 +1,18 @@
+{
+  "format": "custom",
+  "id": "settings",
+  "label": "Settings",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "titulo_pagina": {
+        "type": "Text",
+        "config": {
+          "label": "Título de guia da página",
+          "placeholder": "Digite o título de exibição da guia da página"
+        }
+      }
+    }
+  }
+}

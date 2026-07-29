@@ -1,0 +1,38 @@
+{
+  "name": "pizza-rule",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "slicemachine": "start-slicemachine"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^5.1.1",
+    "@prismicio/client": "^7.17.3",
+    "@prismicio/next": "^2.0.1",
+    "@prismicio/react": "^3.2.1",
+    "@sendgrid/mail": "^8.1.5",
+    "dotenv": "^16.5.0",
+    "json-server": "^1.0.0-beta.3",
+    "next": "15.3.3",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-hook-form": "^7.59.0",
+    "react-toastify": "^11.0.5",
+    "swiper": "^11.2.8",
+    "yup": "^1.6.1"
+  },
+  "devDependencies": {
+    "@slicemachine/adapter-next": "^0.3.78",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "slice-machine-ui": "^2.16.1",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}

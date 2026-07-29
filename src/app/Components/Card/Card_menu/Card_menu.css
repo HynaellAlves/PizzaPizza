@@ -1,0 +1,46 @@
+#card_menu {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    max-width: 288px;
+    height: 652px;
+    max-height: 652px;
+    padding: 10% 5%;
+    margin: 1% 0;
+    font-family: var(--font-nunito-regular);
+    border-radius: 10px;
+    border: 1px solid #550312;
+
+    .card_menu_image_container{
+        max-width: 226px;
+        max-height: 226px;
+        margin: 3% 0;
+    }
+
+    .card_menu_content_title{
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin: 4% 0;
+    }
+
+    .card_menu_content_description{
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 400;
+        margin: 6% 0;
+    }
+
+    .card_menu_content_price{
+        text-align: center;
+        font-size: 1.125rem;
+        font-weight: 700;
+        margin: 3% 0;
+    }
+
+    #button_menu{
+        max-width: 150px;
+        max-height: 38px;
+        margin: 8% 0;
+    }
+}

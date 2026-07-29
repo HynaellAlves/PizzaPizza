@@ -1,0 +1,30 @@
+#container_control_quantity {
+    display: flex;
+    flex-direction: row;
+    min-width: 156px;
+    max-width: 156px;
+    margin: 0 auto;
+    justify-content: space-around;
+
+    .container_label_control_buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: min-content;
+        margin: 0 5%;
+
+        .label_control_buttons {
+            color: black;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+    }
+
+    .button_control_buttons {
+        min-width: 35px;
+        min-height: 35px;
+        border-radius: 50%;
+        cursor: pointer;
+        border: 2px solid var(--primary_color_border);
+    }
+}

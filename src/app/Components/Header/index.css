@@ -1,0 +1,24 @@
+header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    max-height: 54px;
+    background-color: #fff;
+
+    #title_header {
+        height: 100%;
+        cursor: default;
+    
+        h1 {
+            text-transform: uppercase;
+            color: var(--primary_color_title);
+    
+            span {
+                color: var(--secondary_color_title);
+            }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+#container_list_itens {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    min-width: 100%;
+    max-height: 132px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #F0F0F0;
+    font-family: var(--font-nunito-regular);
+
+    #container_shop_page_content_list_itens_info {
+        overflow: hidden;
+        display: flex;
+        width: max-content;
+        max-width: 150px;
+        flex-direction: column;
+        margin: 0 2%;
+        gap: 5px;
+
+        p {
+            white-space: nowrap;
+        }
+
+        .price_item {
+            font-weight: 600;
+            color: #8B4513;
+        }
+    }
+
+}

@@ -1,0 +1,52 @@
+{
+  "id": "comments_zone",
+  "type": "SharedSlice",
+  "name": "CommentsZone",
+  "description": "CommentsZone",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Comentário padrão",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "comments_group": {
+          "type": "Group",
+          "config": {
+            "label": "Comentários",
+            "repeat": true,
+            "fields": {
+              "comment_image": {
+                "type": "Image",
+                "config": {
+                  "label": "Imagem do Autor",
+                  "constraint": {},
+                  "thumbnails": []
+                }
+              },
+              "comment_name": {
+                "type": "Text",
+                "config": {
+                  "label": "Nome do Autor",
+                  "placeholder": "Digite o nome do autor do comentário"
+                }
+              },
+              "comment_description": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Descrição do comentário",
+                  "placeholder": "Digite o texto do comentário",
+                  "allowTargetBlank": true,
+                  "single": "strong,em"
+                }
+              }
+            }
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}
